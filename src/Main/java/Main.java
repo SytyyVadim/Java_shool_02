@@ -4,6 +4,7 @@ public class Main {
         System.out.println(age);
 
         System.out.println(add(10,age));
+        System.out.println(prstr("fff"));
     }
 
     public static int add(int a, int b) {
@@ -11,5 +12,9 @@ public class Main {
             b = a + b * i;
         }
         return  b;
+    }
+
+    public static String prstr(String str) {
+        return str;
     }
 }
