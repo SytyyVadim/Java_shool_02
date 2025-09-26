@@ -1,20 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        int age = 20;
-        System.out.println(age);
-
-        System.out.println(add(10,age));
-        System.out.println(prstr("fff"));
+    System.out.printf("равно = %s%n", Umn(3,5));
+    System.out.printf("равно = %s%n", Umn(3.0,5.0));
+    System.out.printf("равно = %s%n", Umn(3.0,5.0,4.4));
     }
-
-    public static int add(int a, int b) {
-        for (int i = 0;  i < 10; i++) {
-            b = a + b * i;
-        }
-        return  b;
+    public static int Umn(int a, int b){
+    return a*b;
     }
-
-    public static String prstr(String str) {
-        return str;
+    public static double Umn(double a, double b){
+        return a*b;
+    }
+    public static double Umn(double a, double b, double c){
+        return a*b+c;
     }
 }
